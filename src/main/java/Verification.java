@@ -21,7 +21,7 @@ public class Verification {
         if(!match) {
             lives--;
             System.out.println("Try again");
-            System.out.println(lives);
+            System.out.println("Remaining live(s): " + lives);
         }
         System.out.println(playerArray);
         if (Arrays.equals(playerArray, answerArray)) {

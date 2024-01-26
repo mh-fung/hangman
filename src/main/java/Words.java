@@ -13,7 +13,7 @@ public class Words {
         words.add("rich");
         words.add("hei");
     }
-    public static String getWord() {
+    public String getWord() {
         return words.get((int) (Math.random() * words.size()));
     }
 }

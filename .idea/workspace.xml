@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="307fa287-3a57-48c6-9144-10b9dca17f7f" name="Changes" comment="Added variables and loops so that the game continues, added class to validate input">
+    <list default="true" id="307fa287-3a57-48c6-9144-10b9dca17f7f" name="Changes" comment="Added validation class and lives variable">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Word.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InputValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InputValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Display.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Verification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Verification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Words.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Words.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +86,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706183081268</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added validation class and lives variable">
+      <option name="closed" value="true" />
+      <created>1706194822886</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706194822886</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -102,6 +112,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="Created classes, list of words and basic methods" />
     <MESSAGE value="Added variables and loops so that the game continues, added class to validate input" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added variables and loops so that the game continues, added class to validate input" />
+    <MESSAGE value="Added validation class and lives variable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added validation class and lives variable" />
   </component>
 </project>
