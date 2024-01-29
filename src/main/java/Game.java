@@ -1,21 +1,32 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Verification {
+public abstract class Game {
 
-    private static Scanner scanner = new Scanner(System.in);
-    protected static boolean completeGame = false;
-    private static int lives = 8;
+    private final Scanner scanner = new Scanner(System.in);
+    protected boolean completeGame = false;
+    protected int lives;
+    private boolean match = false;
 
-    public static void verifyLetter(char[] answerArray, char[] playerArray) {
+    public void setLives(int lives) {
+        this.lives = lives;
+    }
+
+    public void setMatch(boolean match) {
+        this.match = match;
+    }
+
+    public void verifyLetter(char[] answerArray, char[] playerArray) {
         String playerInput = scanner.next();
-        String validatedLetter = InputValidation.validateInput(playerInput);
-        boolean match = false;
+        InputValidator inputValidator = new InputValidator();
+        String validatedLetter = inputValidator.validateInput(playerInput);
+        this.setMatch(false);
         //loop through the answer array and change the player array
         for (int i=0;i<answerArray.length;i++) {
             if(validatedLetter.charAt(0) == answerArray[i]) {
                 playerArray[i] = answerArray[i];
-                match = true;
+                this.setMatch(true);
+                System.out.println("Nice work!");
             }
         }
         if(!match) {
@@ -32,4 +43,6 @@ public class Verification {
             completeGame = true;
         }
     }
+
+    public abstract void setLives();
 }
