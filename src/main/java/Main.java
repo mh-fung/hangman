@@ -8,20 +8,20 @@ public class Main {
         Words words = new Words();
         Word word = new Word(words.getWord());
         word.setUp();
-        Easy easy = new Easy();
-        easy.setLives();
-        Difficult difficult = new Difficult();
-        difficult.setLives();
         int chosenLevel = scanner.nextInt();
         InputValidator validatorForLevel = new InputValidator();
         chosenLevel = validatorForLevel.validateLevel(chosenLevel);
         if(chosenLevel == 1) {
-            System.out.println("You have chosen the easy level!");
+            Easy easy = new Easy();
+            easy.setLives();
+            easy.printIntro();
         while (!easy.completeGame) {
             easy.verifyLetter(word.answerArray, word.playerArray);
         }
         } else if (chosenLevel == 2) {
-            System.out.println("You have chosen the difficult level!");
+            Difficult difficult = new Difficult();
+            difficult.setLives();
+            difficult.printIntro();
             while (!difficult.completeGame) {
                 difficult.verifyLetter(word.answerArray, word.playerArray);
             }

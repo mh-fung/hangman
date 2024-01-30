@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="307fa287-3a57-48c6-9144-10b9dca17f7f" name="Changes" comment="Refactor codes and deleted unused class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Difficult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Easy.java" afterDir="false" />
+    <list default="true" id="307fa287-3a57-48c6-9144-10b9dca17f7f" name="Changes" comment="Refactor codes and added difficulty level">
+      <change afterPath="$PROJECT_DIR$/src/main/java/HangManDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InputValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InputValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Difficult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Difficult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Easy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Easy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Verification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Word.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +44,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="SharedIndexes">
@@ -103,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706285605592</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Refactor codes and added difficulty level">
+      <option name="closed" value="true" />
+      <created>1706550601778</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706550601778</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,6 +132,7 @@
     <MESSAGE value="Added variables and loops so that the game continues, added class to validate input" />
     <MESSAGE value="Added validation class and lives variable" />
     <MESSAGE value="Refactor codes and deleted unused class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor codes and deleted unused class" />
+    <MESSAGE value="Refactor codes and added difficulty level" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor codes and added difficulty level" />
   </component>
 </project>

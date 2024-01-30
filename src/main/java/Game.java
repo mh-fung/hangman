@@ -18,6 +18,7 @@ public abstract class Game {
 
     public void verifyLetter(char[] answerArray, char[] playerArray) {
         String playerInput = scanner.next();
+        HangManDisplay hangManDisplay = new HangManDisplay();
         InputValidator inputValidator = new InputValidator();
         String validatedLetter = inputValidator.validateInput(playerInput);
         this.setMatch(false);
@@ -32,17 +33,21 @@ public abstract class Game {
         if(!match) {
             lives--;
             System.out.println("Try again");
-            System.out.println("Remaining live(s): " + lives);
+            hangManDisplay.printHangMan(lives);
         }
         System.out.println(playerArray);
         if (Arrays.equals(playerArray, answerArray)) {
             System.out.println("Congratulations!");
             completeGame = true;
         } else if (lives == 0) {
-            System.out.println("Sorry!");
+            hangManDisplay.printHangMan(lives);
             completeGame = true;
         }
     }
 
     public abstract void setLives();
+    public void printIntro() {
+        System.out.println("You have chosen the " + this.getClass().getSimpleName() + " level!!");
+        System.out.println("And you can start now. Guess the word by entering one letter at a time!");
+    };
 }
