@@ -72,9 +72,9 @@ public class HangManDisplay {
             case 1:
                 System.out.println("Remaining lives: 1");
                 System.out.println("---------------");
-                System.out.println("|        |");
-                System.out.println("|        0 ");
-                System.out.println("|      --|--");
+                System.out.println("|        |        ^^^^^^^^^^^^^^^^^^^^");
+                System.out.println("|        0      < I'm dying soon..... >");
+                System.out.println("|      --|--      vvvvvvvvvvvvvvvvvvvv");
                 System.out.println("|        |");
                 System.out.println("|       /");
                 System.out.println("|");

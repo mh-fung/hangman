@@ -1,12 +1,20 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
-public class InputValidator {
+public class Validator {
     private final Scanner scanner = new Scanner(System.in);
-    public String validateInput(String input) {
+
+    public String validateInput(String input, List<String> guessedLetters) {
         if (input.length() != 1){
             System.out.println("Please enter one character only");
             input = scanner.next();
-            validateInput(input);
+            validateInput(input, guessedLetters);
+        }
+        if (guessedLetters.contains(input)) {
+            System.out.println("You have guessed this letter already, please choose another one");
+            input = scanner.next();
+            validateInput(input, guessedLetters);
         }
         return input.toLowerCase();
     }

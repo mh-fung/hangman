@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Objects;
 
 public class Word {
     private String word;
@@ -19,11 +20,14 @@ public class Word {
     }
 
     public void setUp() {
-        System.out.println("Welcome welcome welcome!");
-        System.out.println("This is the word you have to guess");
         this.setAnswerArray(word);
         this.setPlayerArray(word);
+        System.out.println("Welcome welcome welcome!");
+        System.out.println("This is the word you have to guess");
         System.out.println(playerArray);
+        if (Objects.equals(word, "hei")) {
+            System.out.println("HINT: You should know who I am!!!!");
+        }
         System.out.println("Please choose the difficulty level: 1 for easy (8 lives), 2 for difficult (4 lives)");
     }
 }

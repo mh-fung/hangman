@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public abstract class Game {
@@ -7,10 +9,7 @@ public abstract class Game {
     protected boolean completeGame = false;
     protected int lives;
     private boolean match = false;
-
-    public void setLives(int lives) {
-        this.lives = lives;
-    }
+    private List<String> guessedLetters = new ArrayList<>();
 
     public void setMatch(boolean match) {
         this.match = match;
@@ -19,10 +18,10 @@ public abstract class Game {
     public void verifyLetter(char[] answerArray, char[] playerArray) {
         String playerInput = scanner.next();
         HangManDisplay hangManDisplay = new HangManDisplay();
-        InputValidator inputValidator = new InputValidator();
-        String validatedLetter = inputValidator.validateInput(playerInput);
+        Validator inputValidator = new Validator();
+        String validatedLetter = inputValidator.validateInput(playerInput, guessedLetters);
+        guessedLetters.add(validatedLetter);
         this.setMatch(false);
-        //loop through the answer array and change the player array
         for (int i=0;i<answerArray.length;i++) {
             if(validatedLetter.charAt(0) == answerArray[i]) {
                 playerArray[i] = answerArray[i];
@@ -32,15 +31,18 @@ public abstract class Game {
         }
         if(!match) {
             lives--;
-            System.out.println("Try again");
+            System.out.println("Sorry! Wrong guess");
             hangManDisplay.printHangMan(lives);
         }
+        System.out.println("Guessed Letters: " + guessedLetters);
         System.out.println(playerArray);
         if (Arrays.equals(playerArray, answerArray)) {
             System.out.println("Congratulations!");
             completeGame = true;
         } else if (lives == 0) {
             hangManDisplay.printHangMan(lives);
+            System.out.print("The answer is...... ");
+            System.out.println(answerArray);
             completeGame = true;
         }
     }

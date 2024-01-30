@@ -9,7 +9,7 @@ public class Main {
         Word word = new Word(words.getWord());
         word.setUp();
         int chosenLevel = scanner.nextInt();
-        InputValidator validatorForLevel = new InputValidator();
+        Validator validatorForLevel = new Validator();
         chosenLevel = validatorForLevel.validateLevel(chosenLevel);
         if(chosenLevel == 1) {
             Easy easy = new Easy();
