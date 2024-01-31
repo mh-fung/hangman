@@ -40,7 +40,6 @@ public abstract class Game {
             System.out.println("Congratulations!");
             completeGame = true;
         } else if (lives == 0) {
-            hangManDisplay.printHangMan(lives);
             System.out.print("The answer is...... ");
             System.out.println(answerArray);
             completeGame = true;
